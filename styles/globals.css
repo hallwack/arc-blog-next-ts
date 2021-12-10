@@ -1,16 +1,39 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
+@layer components {
+  .nav-link {
+    @apply font-inter text-lg font-semibold uppercase hover:text-[#b9c3e9] transition duration-500;
+  }
+
+  .text-light {
+    @apply text-[#F6F5F5];
+  }
+
+  .text-dark {
+    @apply text-[#112031];
+  }
+
+  .bg-dark {
+    @apply bg-[#112031];
+  }
+
+  .bg-light {
+    @apply bg-[#F6F5F5];
+  }
+
+  .bg-blue-light {
+    @apply bg-[#D3E0EA];
+  }
+
+  .border-dark {
+    @apply border-[#112031];
+  }
+
+  .container-page {
+    @apply container mx-auto;
+  }
 }
